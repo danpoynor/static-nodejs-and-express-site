@@ -1,0 +1,183 @@
+{
+  "data": {
+    "title": "Dan's Full Stack JavaScript Projects",
+    "projects": [
+      {
+        "id": 0,
+        "project_name": "Data Pagination and Filtering Project",
+        "description": "Data pagination exercise using &ldquo;vanilla&rdquo; JavaScript. This script consumes a JSON array containing any number of objects and adds buttons to a page that users can click to navigate to different pages of data.",
+        "technologies": ["JavaScript", "JSON", "HTML", "CSS"],
+        "live_link": "https://danpoynor.github.io/data-pagination-and-filtering-project/",
+        "github_link": "https://github.com/danpoynor/data-pagination-and-filtering-project",
+        "image_urls": [
+          {
+            "type": "thumbnail",
+            "src": "data-pagination-and-filtering-project.jpg",
+            "alt": "Thumbnail preview",
+            "width": "550",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "data-pagination-and-filtering-project-1200x550.png",
+            "alt": "Screenshot of responsive design layouts",
+            "width": "1200",
+            "height": "550"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "project_name": "Random Quote Generator",
+        "description": "Random quote automatically shown every five seconds. Random quote shown when &ldquo;Show another quote&rdquo; button clicked. Time delay between quotes is automatically reset when button clicked.",
+        "technologies": ["JavaScript", "HTML", "CSS"],
+        "live_link": "https://danpoynor.github.io/fsjs-techdegree-project-01/",
+        "github_link": "https://github.com/danpoynor/fsjs-techdegree-project-01",
+        "image_urls": [
+          {
+            "type": "thumbnail",
+            "src": "random-quote-generator.jpg",
+            "alt": "Thumbnail preview",
+            "width": "550",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "random-quote-generator-05-1200x550.jpg",
+            "alt": "Screenshot of random quote generator",
+            "width": "1200",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "random-quote-generator-01-1200x550.jpg",
+            "alt": "Screenshot of random quote generator",
+            "width": "1200",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "random-quote-generator-02-1200x550.jpg",
+            "alt": "Screenshot of random quote generator",
+            "width": "1200",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "random-quote-generator-03-1200x550.jpg",
+            "alt": "Screenshot of random quote generator",
+            "width": "1200",
+            "height": "550"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "project_name": "Interactive Conference Registration Form Prototype",
+        "description": "Coded prototype for a fictional conference demonstrating form validation and error handling using vanilla JavaScript.",
+        "technologies": ["JavaScript", "HTML", "CSS"],
+        "live_link": "https://danpoynor.github.io/conference-registration-form-page/",
+        "github_link": "https://github.com/danpoynor/conference-registration-form-page",
+        "image_urls": [
+          {
+            "type": "thumbnail",
+            "src": "conference-registration-form-page.jpg",
+            "alt": "Thumbnail preview",
+            "width": "550",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "conference-registration-form-page-900.jpg",
+            "alt": "Screenshot of conference registration form",
+            "width": "900",
+            "height": "1637"
+          },
+          {
+            "type": "screenshot",
+            "src": "conference-registration-form-page-validation.jpg",
+            "alt": "Screenshot of conference registration form",
+            "width": "900",
+            "height": "1878"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "project_name": "Phrase Hunter Game",
+        "description": "Phrase Hunter is a browser-based, word guessing game that uses JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard.",
+        "technologies": ["JavaScript", "HTML", "CSS"],
+        "live_link": "https://danpoynor.github.io/oop-game-show-app-project/",
+        "github_link": "https://github.com/danpoynor/oop-game-show-app-project",
+        "image_urls": [
+          {
+            "type": "thumbnail",
+            "src": "oop-game-show-app-project.jpg",
+            "alt": "Screenshot of game show app",
+            "width": "550",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "phrase-hunter-game-01-1200x550.jpg",
+            "alt": "Screenshot of game show app",
+            "width": "1200",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "phrase-hunter-game-02-1200x550.jpg",
+            "alt": "Screenshot of game show app",
+            "width": "1200",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "phrase-hunter-game-03-1200x550.jpg",
+            "alt": "Screenshot of game show app",
+            "width": "1200",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "phrase-hunter-game-04-1200x550.jpg",
+            "alt": "Screenshot of game show app",
+            "width": "1200",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "phrase-hunter-game-05-1200x550.jpg",
+            "alt": "Screenshot of game show app",
+            "width": "1200",
+            "height": "550"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "project_name": "Public API Requests Project",
+        "description": "This web based app is for a fictional company called Awesome Startup, a distributed company with remote employees working all over the world. They need a smart way for employees to share contact information with each other.",
+        "technologies": ["JavaScript", "HTML", "CSS"],
+        "live_link": "https://danpoynor.github.io/public-api-request-example-project/",
+        "github_link": "https://github.com/danpoynor/public-api-request-example-project",
+        "image_urls": [
+          {
+            "type": "thumbnail",
+            "src": "public-api-request-example-project.jpg",
+            "alt": "Thumbnail preview",
+            "width": "550",
+            "height": "550"
+          },
+          {
+            "type": "screenshot",
+            "src": "public-api-request-example-project-1200x550.png",
+            "alt": "Screenshot of api requests project",
+            "width": "1200",
+            "height": "550"
+          }
+        ]
+      }
+    ]
+  }
+}

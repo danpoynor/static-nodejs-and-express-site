@@ -1,0 +1,6 @@
+//- Note the prev/next project comes from the project data.
+//- This doesn't navigate to the random project seen on the index page.
+mixin prevNextNav(prevProjectId, nextProjectId)
+  .prev-next-project-nav
+    a.btn-link(href=prevProjectId) &larr;&nbsp;Previous<span>&nbsp;Project</span>
+    a.btn-link(href=nextProjectId) Next<span>&nbsp;Project</span>&nbsp;&rarr;

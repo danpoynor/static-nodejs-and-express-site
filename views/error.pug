@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  include includes/back-to-home-page.pug
+
+  article.portfolio-intro
+    h1 Houston, we have a problem
+
+    h2 Status Code: #{err.status}
+
+    p Message: !{err.message}
+
+      small
+        h3 Stack Trace:
+        pre #{err.stack}
+
+  include includes/back-to-home-page.pug

@@ -1,0 +1,48 @@
+extends layout.pug
+
+//- Import the prevNextNav() mixin
+include includes/project-prev-next-nav.pug
+
+block content
+
+  include includes/back-to-home-page.pug
+
+  article.portfolio-projects
+
+    //- Add the prev/next project navigation mixin
+    +prevNextNav(prevProjectId, nextProjectId)
+
+    .inner-wrapper.flex-row-wrap.two-col
+      .project-info-box.box
+
+        h1= project.project_name
+
+        //- Using ! here to render html tags included in the json content
+        p !{project.description}
+
+      .project-tech-links-box.box
+        h6 Technologies
+        ul
+          each technology in project.technologies
+            li #{technology}
+
+        a.btn-link(href=project.live_link target='_blank' title='Opens link in new tab' rel='noopener') Live Demo
+        a.btn-link(href=project.github_link target='_blank' title='Opens link in new tab' rel='noopener') GitHub Repo
+
+    .project-img-box.box
+
+      h2 Screenshots
+
+      //- Get screenshot images from image_urls array of image objects. Could be more than one.
+      each image in project.image_urls
+        if image.type === 'screenshot'
+          if image.width && image.height
+            img.project-img(src=`/static/images/${image.src}`, alt=image.alt, width=image.width, height=image.height)
+          else
+            img.project-img(src=`/static/images/${image.src}` alt=image.alt)
+
+
+    //- Add the prev/next project navigation mixin
+    +prevNextNav(prevProjectId, nextProjectId)
+
+    include includes/back-to-home-page.pug

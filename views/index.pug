@@ -1,0 +1,38 @@
+extends layout.pug
+
+block content
+
+  article.portfolio-intro
+
+    h1 Project Portfolio
+
+    p A collection of projects I&rsquo;ve worked on towards achieving a Full Stack JavaScript Developer tech degree.
+
+  article.portfolio-project-thumbs
+    .projects-box.box.grid
+
+      if projects.length > 0
+        each project in projects
+          .cell
+            .project-thumb-box
+              a(href=`/project/${project.id}`)
+                //- get the thumbnail image from image_urls array of image objects. Should only be one.
+                - const tnail = project.image_urls.find(image => image.type === 'thumbnail')
+                img.thumbnail(src=`/static/images/${tnail.src}`, alt=`${tnail.alt} of ${project.project_name}`, width="550", height="550")
+            .project-info-box
+              h5.project-title
+                a(href=`/project/${project.id}`) #{project.project_name}
+        //- Add random project after the last project, just for fun
+        .cell
+          .project-thumb-box
+            a(href=`/project/${randomProject.id}`)
+              img.thumbnail(src='/static/images/random-mystery-project-550x550.jpg', alt='Image for random mystery project', width="550", height="550")
+          .project-info-box
+            h5.project-title
+              a(href=`/project/${randomProject.id}`) Random Mystery Project
+            p.project-description A project selected at random from the list of projects. Take your chances and see what you find!
+            p.project-link
+              a(href=`/project/${randomProject.id}`) Project Link
+
+      else
+        p No project data found!
