@@ -109,6 +109,8 @@ Create the Heroku app and add a new origin to your git repo use (note if app nam
 heroku apps:create danp-public-api-request
 ```
 
+Add a Procfile and check package.json "engines" is defined.
+
 Test the app locally with:
 
 ```zsh
@@ -130,6 +132,16 @@ Or, to open from the command line use:
 ```zsh
 heroku open
 ```
+
+Even thought `heroku local` might look okay errors can still occur once the app is deployed.
+
+If errors occur when viewing the Heroku app at your-app-name.herokuapp.com, such as 'internal sever error', you can use the local Heroku app to view the server logs:
+
+```zsh
+heroku logs
+```
+
+Things you might need to check are files in /views used in your routes have the correct capitalization, and that Pug is in dependencies and not devDependencies.
 
 </details>
 
