@@ -5,7 +5,13 @@ const aboutRouter = require('./routes/about');
 const port = process.env.PORT || 1337;
 const { data } = require('./data.json');
 // Using a controller file here to help keep code organized.
-const { getAllProjects, getSingleProject, getRandomProject, getNextProject, getPreviousProject } = require('./controllers/projects');
+const {
+  getAllProjects,
+  getSingleProject,
+  getRandomProject,
+  getNextProject,
+  getPreviousProject
+} = require('./controllers/projects');
 
 app.set('view engine', 'pug');
 app.set('views', './views');
