@@ -109,7 +109,7 @@ Create the Heroku app and add a new origin to your git repo use (note if app nam
 heroku apps:create danp-public-api-request
 ```
 
-Add a Procfile and check package.json "engines" is defined.
+Add a `Procfile` and check package.json "engines" is defined.
 
 Test the app locally with:
 
@@ -123,6 +123,12 @@ Then to deploy to Heroku, you must first push your code to the Heroku repo:
 
 ```zsh
 git push heroku main
+```
+
+If an error message appears saying the tip of your branch is behind the remote, you can force the update using:
+
+```zsh
+git push heroku main --force
 ```
 
 Then the app will be running at [https://danp-public-api-request.herokuapp.com/](https://danp-public-api-request.herokuapp.com/)
