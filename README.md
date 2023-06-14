@@ -5,8 +5,6 @@
 
 This is a portfolio website created with Node.js, Express, and Pug templates. The site includes a landing page, about page, and project detail pages as part of an exercise in creating fast, modular and dynamic web applications.
 
-Live Site: [https://danp-public-api-request.herokuapp.com/](https://danp-public-api-request.herokuapp.com/)
-
 ---
 
 ## Style Changes Made
@@ -131,9 +129,9 @@ If an error message appears saying the tip of your branch is behind the remote, 
 git push heroku main --force
 ```
 
-Then the app will be running at [https://danp-public-api-request.herokuapp.com/](https://danp-public-api-request.herokuapp.com/)
+Then the app will be running at in your Heroku account
 
-Or, to open from the command line use:
+To open the site from the command line use:
 
 ```zsh
 heroku open
